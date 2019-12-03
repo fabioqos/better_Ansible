@@ -1,0 +1,10 @@
+[Unit]
+Description=Ansible Student Service
+
+[Service]
+ExecStart=/opt/gradle/bin/gradle bootrun -b {{ APPLICATION_HOME }}/build.gradle
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=student.service

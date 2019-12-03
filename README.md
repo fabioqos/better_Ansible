@@ -1,0 +1,1 @@
+# better ansible playbook structure
